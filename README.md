@@ -45,7 +45,7 @@ public class GameInit : MonoBehaviour
 {
     void Awake()
     {
-        if (!AntiCheat.RunChecks())
+        if (!Overseer.RunChecks())
         {
             Debug.LogError("Security check failed. Closing game.");
             Application.Quit();
